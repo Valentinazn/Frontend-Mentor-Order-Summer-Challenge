@@ -1,0 +1,231 @@
+html,
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  margin: 0 auto;
+  background: url(../images/pattern-background-mobile.svg);
+  background-color: var(--clr-primary-2);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-size: var(--fs-body);
+  font-family: var(--ff);
+  text-align: center;
+  line-height: 25px;
+}
+
+
+/* ! Container */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 400px ;
+  margin: 50px auto;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+}
+
+
+/* ! Card */
+
+.card{
+  padding: 2em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* ! Card-content */
+
+.card-title{
+  font-size: var(--fs-title);
+  font-weight: 900;
+  color: var(--clr-1);
+  letter-spacing: 1px;
+}
+
+.card-body{
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+.card-image{
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* ! Card-footer */
+
+.card-footer{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background: var(--clr-3);
+  padding: 1em;
+  border-radius: 10px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.card-footer-body{
+  font-weight: 900;
+  margin: 0;
+  margin-left: 15px;
+  flex-wrap: wrap;
+
+}
+
+.card-footer-body span{
+  display: flex;
+  margin-bottom: -10px;
+  font-weight: 500;
+}
+
+
+.card-footer a{
+  position: absolute;
+  right: 15px;
+}
+
+.card-footer a:hover,
+.card-footer a:focus{
+  color: var(--clr-primary-1)
+}
+
+
+/* ! Card-btn */
+
+.card-btn{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.btn{
+  cursor: pointer;
+  border: none;
+  margin: 10px 0;
+}
+
+
+.btn-pay{
+  padding: 1em;
+  border-radius: 10px;
+  background: var(--clr-primary-1);
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.btn-pay span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-pay span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-pay:hover span {
+  padding-right: 25px;
+}
+
+.btn-pay:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.btn-delete{
+  background: none;
+  color:var(--clr-2);
+  font-weight: 700;
+}
+
+.btn-delete:hover,
+.btn-delete:focus{
+  color: red;
+}
+
+
+/* ! Footer */
+
+
+footer{
+  background-color: var(--clr-primary-1);
+  bottom: 0;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content{
+  padding: 1em;
+  font-size: 0.68rem;
+  opacity: .6;
+  letter-spacing: 1px;
+}
+
+.footer-content,
+.footer-content a{
+  color: rgba(255,255,255, .65);
+}
+
+.footer-content a:hover{
+  color: var(--clr-3)
+}
+
+
+
+footer,
+#push {
+    height: 100px;
+}
+
+
+
+/* ! Root */
+
+:root{
+
+  --ff: 'Red Hat Display', sans-serif;
+  --fs-title: 1.75rem;
+  --fs-body: .85rem;
+
+  --clr-1: hsl(223, 47%, 23%);
+  --clr-2: hsl(224, 23%, 55%);
+  --clr-3: hsl(225, 100%, 98%);
+
+  --clr-primary-1: hsl(245, 75%, 52%);
+  --clr-primary-2: hsl(225, 100%, 94%);
+}
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
