@@ -58,12 +58,6 @@ body{
 
 
 
-.card-image{
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 
 /* ! Card-footer */
 
@@ -116,12 +110,12 @@ body{
   cursor: pointer;
   border: none;
   margin: 10px 0;
+  padding: 1em;
+  border-radius: 10px;
 }
 
 
 .btn-pay{
-  padding: 1em;
-  border-radius: 10px;
   background: var(--clr-primary-1);
   color: #fff;
   transition: all 0.5s;
@@ -157,11 +151,12 @@ body{
   background: none;
   color:var(--clr-2);
   font-weight: 700;
+  transition: all 1s;
 }
 
-.btn-delete:hover,
-.btn-delete:focus{
-  color: red;
+.btn-delete:hover{
+  color: #fff;
+  background: #9c080d;
 }
 
 
